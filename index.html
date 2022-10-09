@@ -12,9 +12,14 @@
     </script>
     <script>
       $(document).ready(function() {
+
         $('button').click(function() {
-          $('p').hide();
+          $('#button-hide').hide();
         });
+
+        $('.self-hide').click(function() {
+          $(this).hide();
+        })
       });
     </script>
   </head>
@@ -22,6 +27,9 @@
     <header>
       <h1>James Hazeldine</h1>
       <p>Just practicing some jQuery</p>
+      <p class="self-hide">Click me to hide me.</p>
+      <p class="self-hide">Click me to hide me.</p>
+      <p id="button-hide">Click the button to remove this paragraph</p>
       <button>Click me!</button>
     </header>
   </body>
